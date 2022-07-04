@@ -1,0 +1,18 @@
+do(
+  define(fibonacci, 
+    fun(n,
+      if(<=(n, 1),
+        n,
+        +(fibonacci(-(n, 1)), fibonacci(-(n, 2)))
+      )
+    )
+  ),
+  print("Fibonacci sequence:"),
+  define(i, 0),
+  while(<(i, 10),
+    do(
+      print(fibonacci(i)),
+      set(i, +(i, 1))
+    )
+  )
+)

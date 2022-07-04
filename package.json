@@ -1,0 +1,10 @@
+{
+  "name": "egg",
+  "version": "0.0.1",
+  "bin": {
+    "egg": "egg.js"
+  },
+  "dependencies": {
+    "prompt-base": "^5.0.0"
+  }
+}
