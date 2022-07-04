@@ -29,12 +29,12 @@ if (!args.length) {
   execREPL()
 }
 else {
-  const targetFile = args[0]
-  const fileString = fs.readFileSync(targetFile).toString()
+  const filename = args[0]
+  const file = fs.readFileSync(filename).toString()
 
   function run(program) {
     return evaluate(parse(program), Object.create(topScope));
   }
 
-  run(fileString);
+  run(file);
 }
