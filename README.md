@@ -1,8 +1,9 @@
 # egg
 interpreter for a small programming language: egg
 
-Usage
+# Usage
 ```
+#link
 npm link
 
 #REPL mode
